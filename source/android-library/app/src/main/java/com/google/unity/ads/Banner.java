@@ -29,6 +29,9 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
+import java.util.Timer;
+import java.util.TimerTask;
+import android.os.Handler;
 
 /**
  * This class represents the native implementation for the Google Mobile Ads Unity plugin. This
@@ -304,6 +307,56 @@ public class Banner {
                 if (parentView != null && parentView instanceof ViewGroup) {
                     ((ViewGroup) parentView).removeView(mAdView);
                 }
+            }
+        });
+    }
+
+    /**
+     * Just the {@link AdView}.
+     */
+    public void just() {
+        mUnityPlayerActivity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(PluginUtils.LOGTAG, "Calling just() on Android");
+            }
+        });
+    }
+
+    /**
+     * SetRefreshInterval the {@link AdView}.
+     */
+    public void setRefreshInterval(final float interval) {
+        mUnityPlayerActivity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(PluginUtils.LOGTAG, "Calling setRefreshInterval() on Android: " + interval);
+
+                if (interval < 1) {
+                    return;
+                }
+
+                final int timerInterval = (int)(interval * 1000);
+
+                mUnityPlayerActivity.runOnUiThread(new Runnable() {
+                    public void run() {
+                        final Timer timer = new Timer();
+                        final Handler handler = new Handler();
+
+                        timer.schedule( new TimerTask(){
+                            @Override
+                            public void run() {
+                                handler.post( new Runnable() {
+                                    public void run() {
+                                        Log.d(PluginUtils.LOGTAG, "Calling refresh timer() on Android: " + interval);
+                                        AdRequest adRequest = new AdRequest.Builder().build();
+                                        mAdView.loadAd(adRequest);
+                                    }
+                                });
+                            }
+                        }, timerInterval, timerInterval);
+                    }
+                });
             }
         });
     }
