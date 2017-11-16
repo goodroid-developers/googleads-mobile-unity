@@ -76,6 +76,12 @@ public class PluginUtils {
      */
     private static final int POSITION_CENTER = 6;
 
+    private static final int POSITION_RECT_BOTTOM = 7;
+
+    private static final int POSITION_RECT_CENTER = 8;
+
+    private static final int POSITION_RECT_BACK = 9;
+
     /**
      * Gets a string error reason from an error code.
      *
@@ -128,6 +134,15 @@ public class PluginUtils {
             case POSITION_CENTER:
                 gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
                 break;
+            case POSITION_RECT_BOTTOM:
+                gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+                break;
+            case POSITION_RECT_CENTER:
+                gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
+                break;
+            case POSITION_RECT_BACK:
+                gravity = Gravity.BOTTOM | Gravity.RIGHT;
+                break;
             default:
                 throw new IllegalArgumentException("Attempted to position ad with invalid ad "
                         + "position.");
@@ -150,7 +165,12 @@ public class PluginUtils {
             case POSITION_TOP:
             case POSITION_BOTTOM:
             case POSITION_CENTER:
+            case POSITION_RECT_BOTTOM:
+            case POSITION_RECT_CENTER:
                 offset = (anchorWidth - viewWidth) / 2;
+                break;
+            case POSITION_RECT_BACK:
+                offset = (anchorWidth - viewWidth) * 8;
                 break;
             // Make the center position the default horizontal position.
             default:
@@ -178,6 +198,15 @@ public class PluginUtils {
             case POSITION_BOTTOM_LEFT:
             case POSITION_BOTTOM_RIGHT:
                 offset = -viewHeight;
+                break;
+            case POSITION_RECT_BOTTOM:
+                offset = ((-anchorHeight - viewHeight) / 2) + (296 * 2);
+                break;
+            case POSITION_RECT_CENTER:
+                offset = ((-anchorHeight - viewHeight) / 2) + (37 * 2);
+                break;
+            case POSITION_RECT_BACK:
+                offset = viewHeight * 8;
                 break;
             // Make the bottom position the default vertical position.
             default:
