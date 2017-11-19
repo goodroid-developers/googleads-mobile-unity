@@ -17,6 +17,7 @@ package com.google.unity.ads;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Point;
 import android.os.Build;
 import android.util.Log;
 import android.view.Gravity;
@@ -25,6 +26,8 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
+import android.widget.FrameLayout;
+// import android.view.ViewGroup.LayoutParams;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -229,11 +232,12 @@ public class Banner {
                 int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
                 int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
 
-                mPopupWindow.showAsDropDown(anchorView,
-                        PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth,
-                                anchorView.getWidth()),
-                        PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight,
-                                anchorView.getHeight()));
+                int xoff = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth,
+                        anchorView.getWidth());
+                int yoff = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight,
+                        anchorView.getHeight());
+
+                mPopupWindow.showAsDropDown(anchorView, xoff, yoff);
             } else {
                 mPopupWindow.showAtLocation(anchorView,
                         PluginUtils.getLayoutGravityForPositionCode(mPositionCode), 0, 0);
@@ -319,9 +323,144 @@ public class Banner {
             @Override
             public void run() {
                 Log.d(PluginUtils.LOGTAG, "Calling just() on Android");
+
+                float scale = 0;
+
+                // 黒帯考慮
+                {
+                    float baseHeight  = 1136;
+                    float targetWidth = 640;
+                    float rectWidth   = 600;
+
+                    float bannerWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+                    Log.d("OUCH", "bannerWidth:" + bannerWidth);
+
+                    float screenWidth = mUnityPlayerActivity.getWindow().getDecorView().getWidth();
+                    float screenHeight = mUnityPlayerActivity.getWindow().getDecorView().getHeight();
+
+                    Log.d("OUCH", "before pointX:" + screenWidth);
+                    Log.d("OUCH", "before pointY:" + screenHeight);
+
+                    // 解像度
+                    float density = mUnityPlayerActivity.getResources().getDisplayMetrics().density;
+                    Log.d("OUCH", "density:" + density);
+
+                    screenWidth *= (float)(1.0 / density);
+                    screenHeight *= (float)(1.0 / density);
+
+                    Log.d("OUCH", "after pointX:" + screenWidth);
+                    Log.d("OUCH", "after pointY:" + screenHeight);
+
+                    float heightScale = baseHeight / screenHeight;
+                    Log.d("OUCH", "heightScale:" + heightScale);
+                    float width       = screenWidth * heightScale; // height1136としたときのwidth
+                    Log.d("OUCH", "width:" + width);
+                    float padding     = width - targetWidth;
+                    Log.d("OUCH", "padding:" + padding);
+                    targetWidth       = screenHeight - padding; // 黒帯抜いたwidth
+                    Log.d("OUCH", "targetWidth:" + targetWidth);
+
+                    // レクタングル
+                    if (mPositionCode == PluginUtils.POSITION_RECT_BOTTOM || mPositionCode == PluginUtils.POSITION_RECT_CENTER)
+                    {
+                        targetWidth *= rectWidth / width;
+                    }
+
+                    Log.d("OUCH", "mAdView.getWidth:" + mAdView.getWidth());
+                    Log.d("OUCH", "targetWidth:" + targetWidth);
+                    // scale = targetWidth / mAdView.getWidth();
+                    scale = targetWidth / bannerWidth;
+
+                }
+
+                // mAdView.setScaleX(scale);
+                // mAdView.setScaleY(scale);
+                // mAdView.setScaleX(1.5f);
+                // mAdView.setScaleY(1.5f);
+                // mPopupWindow.setScaleX(3);
+                // mPopupWindow.setScaleY(3);
+                // mPopupWindow.setWidth(640);
+                // mPopupWindow.setHeight(320);
+                // FrameLayout.LayoutParams param = new FrameLayout.LayoutParams(
+                //         ViewGroup.LayoutParams.WRAP_CONTENT,
+                //         ViewGroup.LayoutParams.WRAP_CONTENT);
+                // LayoutParams layoutParams = mAdView.getLayoutParams();
+                // layoutParams.height = 320 * 2;
+                // layoutParams.width = 50 * 2;
+                // mAdView.setLayoutParams(param);
+                Log.d("OUCH", "scale:" + scale);
+
+                int width = mPopupWindow.getWidth();
+                int height = mPopupWindow.getHeight();
+                Log.d("OUCH", "before width:" + width);
+                Log.d("OUCH", "before eight:" + height);
+
+                width = (int)((float)width * scale);
+                height = (int)((float)height * scale);
+
+                // mPopupWindow.setWidth(width);
+                // mPopupWindow.setHeight(height);
+                Log.d("OUCH", "after width:" + width);
+                Log.d("OUCH", "after eight:" + height);
             }
         });
     }
+
+    /**
+     * refreshAd the {@link AdView}.
+     */
+    public void refreshAd() {
+        mUnityPlayerActivity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(PluginUtils.LOGTAG, "Calling refreshAd() on Android");
+                AdRequest adRequest = new AdRequest.Builder().build();
+                mAdView.loadAd(adRequest);
+            }
+        });
+    }
+
+    /**
+     * move the {@link AdView}.
+     */
+    public void moveAdPosition(final int positionCode) {
+        mUnityPlayerActivity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                Log.d(PluginUtils.LOGTAG, "MOGE Calling moveAdPosition() on Android" + positionCode);
+
+                mPositionCode = positionCode;
+
+                View anchorView = mUnityPlayerActivity.getWindow().getDecorView().getRootView();
+
+                int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+                int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
+
+                int xoff = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth,
+                        anchorView.getWidth());
+                int yoff = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight,
+                        anchorView.getHeight());
+                int width = mPopupWindow.getWidth();
+                int height = mPopupWindow.getHeight();
+
+                mPopupWindow.update(anchorView, xoff, yoff, width, height);
+            }
+        });
+    }
+
+    // protected void setScale(float scale) {
+    //
+    //     LayoutParams params = getLayoutParams();
+    //     onUpdateScale(scale, params);
+    //     setLayoutParams(params);
+    // }
+    //
+    // protected void onUpdateScale(float scale, LayoutParams params) {
+    //     params.leftMargin = (int) (mModel.getX() * scale);
+    //     params.topMargin = (int) (mModel.getY() * scale);
+    //     params.width = (int) (mModel.getWidth() * scale);
+    //     params.height = (int) (mModel.getHeight() * scale);
+    // }
 
     /**
      * SetRefreshInterval the {@link AdView}.
@@ -349,8 +488,7 @@ public class Banner {
                                 handler.post( new Runnable() {
                                     public void run() {
                                         Log.d(PluginUtils.LOGTAG, "Calling refresh timer() on Android: " + interval);
-                                        AdRequest adRequest = new AdRequest.Builder().build();
-                                        mAdView.loadAd(adRequest);
+                                        refreshAd();
                                     }
                                 });
                             }
