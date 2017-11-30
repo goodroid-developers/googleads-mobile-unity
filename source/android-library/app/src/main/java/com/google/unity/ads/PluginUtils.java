@@ -142,7 +142,7 @@ public class PluginUtils {
                 break;
             case POSITION_RECT_BACK:
                 // gravity = Gravity.BOTTOM | Gravity.RIGHT;
-                gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+                gravity = Gravity.TOP | Gravity.LEFT;
                 break;
             default:
                 throw new IllegalArgumentException("Attempted to position ad with invalid ad "
@@ -171,7 +171,7 @@ public class PluginUtils {
                 offset = (anchorWidth - viewWidth) / 2;
                 break;
             case POSITION_RECT_BACK:
-                offset = anchorWidth + (viewWidth * 3);
+                offset = - (viewWidth * 5);
                 break;
             // Make the center position the default horizontal position.
             default:
@@ -208,7 +208,7 @@ public class PluginUtils {
                 offset = ((-anchorHeight - viewHeight) / 2) + (37 * 2);
                 break;
             case POSITION_RECT_BACK:
-                offset = viewHeight * 3;
+                offset = - (viewHeight * 5);
                 break;
             // Make the bottom position the default vertical position.
             default:
