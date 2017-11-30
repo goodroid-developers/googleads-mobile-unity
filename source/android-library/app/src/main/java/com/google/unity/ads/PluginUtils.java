@@ -80,7 +80,7 @@ public class PluginUtils {
 
     public static final int POSITION_RECT_CENTER = 8;
 
-    private static final int POSITION_RECT_BACK = 9;
+    public static final int POSITION_RECT_BACK = 9;
 
     /**
      * Gets a string error reason from an error code.
@@ -141,8 +141,7 @@ public class PluginUtils {
                 gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
                 break;
             case POSITION_RECT_BACK:
-                // gravity = Gravity.BOTTOM | Gravity.RIGHT;
-                gravity = Gravity.TOP | Gravity.LEFT;
+                gravity = Gravity.BOTTOM | Gravity.RIGHT;
                 break;
             default:
                 throw new IllegalArgumentException("Attempted to position ad with invalid ad "
@@ -171,7 +170,7 @@ public class PluginUtils {
                 offset = (anchorWidth - viewWidth) / 2;
                 break;
             case POSITION_RECT_BACK:
-                offset = - (viewWidth * 5);
+                offset = anchorWidth * 6;
                 break;
             // Make the center position the default horizontal position.
             default:
@@ -208,7 +207,7 @@ public class PluginUtils {
                 offset = ((-anchorHeight - viewHeight) / 2) + (37 * 2);
                 break;
             case POSITION_RECT_BACK:
-                offset = - (viewHeight * 5);
+                offset = anchorHeight * 6;
                 break;
             // Make the bottom position the default vertical position.
             default:

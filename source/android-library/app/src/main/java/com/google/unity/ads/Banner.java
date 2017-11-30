@@ -429,21 +429,35 @@ public class Banner {
             public void run() {
                 Log.d(PluginUtils.LOGTAG, "MOGE Calling moveAdPosition() on Android" + positionCode);
 
-                mPositionCode = positionCode;
+                // moveではなく表示非表示に変更
+                if (positionCode == PluginUtils.POSITION_RECT_BACK)
+                {
+                    mAdView.setVisibility(View.INVISIBLE);
+                    mPopupWindow.setTouchable(false);
+                    mPopupWindow.update();
+                }
+                else
+                {
+                    mAdView.setVisibility(View.VISIBLE);
+                    mPopupWindow.setTouchable(true);
+                    mPopupWindow.update();
+                }
 
-                View anchorView = mUnityPlayerActivity.getWindow().getDecorView().getRootView();
-
-                int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
-                int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
-
-                int xoff = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth,
-                        anchorView.getWidth());
-                int yoff = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight,
-                        anchorView.getHeight());
-                int width = mPopupWindow.getWidth();
-                int height = mPopupWindow.getHeight();
-
-                mPopupWindow.update(anchorView, xoff, yoff, width, height);
+                // mPositionCode = positionCode;
+                //
+                // View anchorView = mUnityPlayerActivity.getWindow().getDecorView().getRootView();
+                //
+                // int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+                // int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
+                //
+                // int xoff = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth,
+                //         anchorView.getWidth());
+                // int yoff = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight,
+                //         anchorView.getHeight());
+                // int width = mPopupWindow.getWidth();
+                // int height = mPopupWindow.getHeight();
+                //
+                // mPopupWindow.update(anchorView, xoff, yoff, width, height);
             }
         });
     }
