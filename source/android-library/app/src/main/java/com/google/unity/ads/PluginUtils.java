@@ -76,6 +76,12 @@ public class PluginUtils {
      */
     private static final int POSITION_CENTER = 6;
 
+    public static final int POSITION_RECT_BOTTOM = 7;
+
+    public static final int POSITION_RECT_CENTER = 8;
+
+    public static final int POSITION_RECT_BACK = 9;
+
     /**
      * Gets a string error reason from an error code.
      *
@@ -128,6 +134,15 @@ public class PluginUtils {
             case POSITION_CENTER:
                 gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
                 break;
+            case POSITION_RECT_BOTTOM:
+                gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+                break;
+            case POSITION_RECT_CENTER:
+                gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
+                break;
+            case POSITION_RECT_BACK:
+                gravity = Gravity.BOTTOM | Gravity.RIGHT;
+                break;
             default:
                 throw new IllegalArgumentException("Attempted to position ad with invalid ad "
                         + "position.");
@@ -150,7 +165,12 @@ public class PluginUtils {
             case POSITION_TOP:
             case POSITION_BOTTOM:
             case POSITION_CENTER:
+            case POSITION_RECT_BOTTOM:
+            case POSITION_RECT_CENTER:
                 offset = (anchorWidth - viewWidth) / 2;
+                break;
+            case POSITION_RECT_BACK:
+                offset = anchorWidth * 6;
                 break;
             // Make the center position the default horizontal position.
             default:
@@ -171,13 +191,14 @@ public class PluginUtils {
      * @return the vertical offset relative to the bottom of the anchorview.
      */
     public static int getVerticalOffsetForPositionCode(int positionCode, int viewHeight,
-                                                       int anchorHeight) {
+            int anchorHeight) {
         int offset;
         switch (positionCode) {
             case POSITION_TOP:
             case POSITION_TOP_LEFT:
             case POSITION_TOP_RIGHT:
                 offset = -anchorHeight;
+                // offset = 0;
                 break;
             case POSITION_CENTER:
                 offset = (-anchorHeight - viewHeight) / 2;
@@ -186,6 +207,15 @@ public class PluginUtils {
             case POSITION_BOTTOM_LEFT:
             case POSITION_BOTTOM_RIGHT:
                 offset = -viewHeight;
+                break;
+            case POSITION_RECT_BOTTOM:
+                offset = ((-anchorHeight - viewHeight) / 2) + (296 * 2);
+                break;
+            case POSITION_RECT_CENTER:
+                offset = ((-anchorHeight - viewHeight) / 2) + (37 * 2);
+                break;
+            case POSITION_RECT_BACK:
+                offset = anchorHeight * 6;
                 break;
             // Make the bottom position the default vertical position.
             default:
