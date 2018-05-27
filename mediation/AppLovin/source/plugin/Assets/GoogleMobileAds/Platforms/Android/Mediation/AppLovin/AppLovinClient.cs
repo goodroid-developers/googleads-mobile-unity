@@ -39,8 +39,17 @@ namespace GoogleMobileAds.Android.Mediation.AppLovin
             MonoBehaviour.print("AppLovin intialize received");
             AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
-            AndroidJavaObject appLovin = new AndroidJavaObject("com.applovin.sdk.AppLovinSdk");
+            AndroidJavaClass appLovin = new AndroidJavaClass("com.applovin.sdk.AppLovinSdk");
             appLovin.CallStatic("initializeSdk", currentActivity);
+        }
+
+        public void SetHasUserConsent(bool hasUserConsent)
+        {
+            MonoBehaviour.print("Updating AppLovin user consent flag");
+            AndroidJavaClass unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
+            AndroidJavaObject currentActivity = unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+            AndroidJavaClass appLovinPrivacySettings = new AndroidJavaClass("com.applovin.sdk.AppLovinPrivacySettings");
+            appLovinPrivacySettings.CallStatic("setHasUserConsent", hasUserConsent, currentActivity);
         }
     }
 }

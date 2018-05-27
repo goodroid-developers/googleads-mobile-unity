@@ -99,6 +99,11 @@ public class RewardBasedVideo {
                     public void onRewardedVideoAdLeftApplication() {
                         adListener.onAdLeftApplication();
                     }
+
+                    @Override
+                    public void onRewardedVideoCompleted() {
+                        adListener.onAdCompleted();
+                    }
                 });
             }
         });
@@ -124,6 +129,18 @@ public class RewardBasedVideo {
      */
     public boolean isLoaded() {
         return isLoaded;
+    }
+
+    /**
+     * Sets the user ID to be used in server-to-server reward callbacks.
+     */
+    public void setUserId(final String userId) {
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                rewardBasedVideo.setUserId(userId);
+            }
+        });
     }
 
     /**
