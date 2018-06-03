@@ -91,16 +91,16 @@ public class PluginUtils {
     public static String getErrorReason(int errorCode) {
         switch (errorCode) {
             case AdRequest.ERROR_CODE_INTERNAL_ERROR:
-                return "Internal error";
+            return "Internal error";
             case AdRequest.ERROR_CODE_INVALID_REQUEST:
-                return "Invalid request";
+            return "Invalid request";
             case AdRequest.ERROR_CODE_NETWORK_ERROR:
-                return "Network Error";
+            return "Network Error";
             case AdRequest.ERROR_CODE_NO_FILL:
-                return "No fill";
+            return "No fill";
             default:
-                Log.w(LOGTAG, String.format("Unexpected error code: %s", errorCode));
-                return "";
+            Log.w(LOGTAG, String.format("Unexpected error code: %s", errorCode));
+            return "";
         }
     }
 
@@ -112,71 +112,72 @@ public class PluginUtils {
      */
     public static int getLayoutGravityForPositionCode(int positionCode) {
         int gravity;
+        Log.d(LOGTAG, String.format("getLayoutGravityForPositionCode"));
         switch (positionCode) {
             case POSITION_TOP:
-                gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
-                break;
+            gravity = Gravity.TOP | Gravity.CENTER_HORIZONTAL;
+            break;
             case POSITION_BOTTOM:
-                gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
-                break;
+            gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+            break;
             case POSITION_TOP_LEFT:
-                gravity = Gravity.TOP | Gravity.LEFT;
-                break;
+            gravity = Gravity.TOP | Gravity.LEFT;
+            break;
             case POSITION_TOP_RIGHT:
-                gravity = Gravity.TOP | Gravity.RIGHT;
-                break;
+            gravity = Gravity.TOP | Gravity.RIGHT;
+            break;
             case POSITION_BOTTOM_LEFT:
-                gravity = Gravity.BOTTOM | Gravity.LEFT;
-                break;
+            gravity = Gravity.BOTTOM | Gravity.LEFT;
+            break;
             case POSITION_BOTTOM_RIGHT:
-                gravity = Gravity.BOTTOM | Gravity.RIGHT;
-                break;
+            gravity = Gravity.BOTTOM | Gravity.RIGHT;
+            break;
             case POSITION_CENTER:
-                gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
-                break;
+            gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
+            break;
             case POSITION_RECT_BOTTOM:
-                gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
-                break;
+            gravity = Gravity.BOTTOM | Gravity.CENTER_HORIZONTAL;
+            break;
             case POSITION_RECT_CENTER:
-                gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
-                break;
+            gravity = Gravity.CENTER_HORIZONTAL | Gravity.CENTER_VERTICAL;
+            break;
             case POSITION_RECT_BACK:
-                gravity = Gravity.BOTTOM | Gravity.RIGHT;
-                break;
+            gravity = Gravity.BOTTOM | Gravity.RIGHT;
+            break;
             default:
-                throw new IllegalArgumentException("Attempted to position ad with invalid ad "
-                        + "position.");
+            throw new IllegalArgumentException("Attempted to position ad with invalid ad "
+                + "position.");
         }
         return gravity;
     }
 
     public static int getHorizontalOffsetForPositionCode(int positionCode, int viewWidth,
-                                                         int anchorWidth) {
+       int anchorWidth) {
         int offset;
         switch (positionCode) {
             case POSITION_TOP_LEFT:
             case POSITION_BOTTOM_LEFT:
-                offset = 0;
-                break;
+            offset = 0;
+            break;
             case POSITION_TOP_RIGHT:
             case POSITION_BOTTOM_RIGHT:
-                offset = anchorWidth - viewWidth;
-                break;
+            offset = anchorWidth - viewWidth;
+            break;
             case POSITION_TOP:
             case POSITION_BOTTOM:
             case POSITION_CENTER:
             case POSITION_RECT_BOTTOM:
             case POSITION_RECT_CENTER:
-                offset = (anchorWidth - viewWidth) / 2;
-                break;
+            offset = (anchorWidth - viewWidth) / 2;
+            break;
             case POSITION_RECT_BACK:
-                offset = anchorWidth * 6;
-                break;
+            offset = anchorWidth * 6;
+            break;
             // Make the center position the default horizontal position.
             default:
-                Log.w(LOGTAG, "Attempted to position ad with invalid ad "
-                        + "position. Using default center horizontal position.");
-                offset = (anchorWidth - viewWidth) / 2;
+            Log.w(LOGTAG, "Attempted to position ad with invalid ad "
+                + "position. Using default center horizontal position.");
+            offset = (anchorWidth - viewWidth) / 2;
         }
 
         return offset;
@@ -190,41 +191,109 @@ public class PluginUtils {
      * @param anchorHeight the height of the anchoring view to position in
      * @return the vertical offset relative to the bottom of the anchorview.
      */
-    public static int getVerticalOffsetForPositionCode(int positionCode, int viewHeight,
-            int anchorHeight) {
+    public static int getVerticalOffsetForPositionCode(int positionCode, int viewHeight, int anchorWidth, int anchorHeight) {
         int offset;
+        int padding = getVerticalPaddingForPositionCode(positionCode, anchorWidth, anchorHeight); 
         switch (positionCode) {
             case POSITION_TOP:
             case POSITION_TOP_LEFT:
             case POSITION_TOP_RIGHT:
+            {
                 offset = -anchorHeight;
-                // offset = 0;
                 break;
+            }
             case POSITION_CENTER:
+            {
                 offset = (-anchorHeight - viewHeight) / 2;
                 break;
+            }
             case POSITION_BOTTOM:
             case POSITION_BOTTOM_LEFT:
             case POSITION_BOTTOM_RIGHT:
+            {
                 offset = -viewHeight;
                 break;
+            }
             case POSITION_RECT_BOTTOM:
+            {
                 offset = ((-anchorHeight - viewHeight) / 2) + (296 * 2);
                 break;
+            }
             case POSITION_RECT_CENTER:
+            {
                 offset = ((-anchorHeight - viewHeight) / 2) + (37 * 2);
                 break;
+            }
             case POSITION_RECT_BACK:
+            {
                 offset = anchorHeight * 6;
                 break;
+            }
             // Make the bottom position the default vertical position.
             default:
+            {
                 Log.w(LOGTAG, "Attempted to position ad with invalid ad "
-                        + "position. Using default bottom vertical position.");
+                    + "position. Using default bottom vertical position.");
                 offset = -viewHeight;
+                break;
+            }
         }
 
-        return offset;
+        return offset + padding;
+    }
+
+    public static int getVerticalPaddingForPositionCode(int positionCode, int anchorWidth, int anchorHeight)
+    {
+        float   baseWidth       = 640.0f;
+        float   baseHeight      = 1136.0f;
+        float   viewRatio       = (float)anchorWidth / (float)anchorHeight;
+        float   baseRatio       = baseWidth / baseHeight;
+        Boolean isPortrate      = viewRatio <= baseRatio;
+        float   fixedViewHeight = baseHeight * anchorWidth / baseWidth;
+        int     padding         = (int)((anchorHeight - fixedViewHeight) / 2.0f);
+        switch (positionCode) {
+            case POSITION_TOP:
+            case POSITION_TOP_LEFT:
+            case POSITION_TOP_RIGHT:
+            {
+                if (!isPortrate)
+                {
+                    padding = 0;
+                }
+                break;
+            }
+            case POSITION_BOTTOM:
+            case POSITION_BOTTOM_LEFT:
+            case POSITION_BOTTOM_RIGHT:
+            {
+                if (isPortrate)
+                {
+                    padding = -padding;
+                }
+                else
+                {
+                    padding = 0;
+                }
+                break;
+            }
+            case POSITION_CENTER:
+            case POSITION_RECT_CENTER:
+            case POSITION_RECT_BOTTOM:
+            case POSITION_RECT_BACK:
+            {
+                padding = 0;
+                break;
+            }
+            // Make the bottom position the default vertical position.
+            default:
+            {
+                Log.w(LOGTAG, "Attempted to position ad with invalid ad "
+                    + "position. Using default bottom vertical position.");
+                padding = 0;
+                break;
+            }
+        }
+        return padding;
     }
 
     public static float convertPixelsToDp(float px) {
@@ -244,13 +313,13 @@ public class PluginUtils {
             method.invoke(popupWindow, layoutType);
         } catch (NoSuchMethodException exception) {
             Log.w(LOGTAG, String.format("Unable to set popUpWindow window layout type: %s",
-                    exception.getLocalizedMessage()));
+                exception.getLocalizedMessage()));
         } catch (IllegalAccessException exception) {
             Log.w(LOGTAG, String.format("Unable to set popUpWindow window layout type: %s",
-                    exception.getLocalizedMessage()));
+                exception.getLocalizedMessage()));
         } catch (InvocationTargetException exception) {
             Log.d(LOGTAG, String.format("Unable to set popUpWindow window layout type: %s",
-                    exception.getLocalizedMessage()));
+                exception.getLocalizedMessage()));
         }
     }
 

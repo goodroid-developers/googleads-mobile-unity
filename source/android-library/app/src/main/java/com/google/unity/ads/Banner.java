@@ -27,6 +27,8 @@ import android.view.ViewTreeObserver;
 import android.view.WindowManager;
 import android.widget.PopupWindow;
 import android.widget.FrameLayout;
+import android.view.Gravity;
+import android.view.ViewGroup.LayoutParams;
 import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdSize;
@@ -110,8 +112,8 @@ public class Banner {
      *                 Unity.
      */
     public Banner(Activity activity, UnityAdListener listener) {
-        this.mUnityPlayerActivity = activity;
-        this.mUnityListener = listener;
+    	this.mUnityPlayerActivity = activity;
+    	this.mUnityListener = listener;
     }
 
     /**
@@ -122,17 +124,17 @@ public class Banner {
      * @param positionCode A code indicating where to place the ad.
      */
     public void create(final String publisherId, final AdSize adSize, final int positionCode) {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                createAdView(publisherId, adSize);
-                createPopupWindow();
-                mHorizontalOffset = 0;
-                mVerticalOffset = 0;
-                mPositionCode = positionCode;
-                mHidden = false;
-            }
-        });
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			createAdView(publisherId, adSize);
+    			createPopupWindow();
+    			mHorizontalOffset = 0;
+    			mVerticalOffset = 0;
+    			mPositionCode = positionCode;
+    			mHidden = false;
+    		}
+    	});
     }
 
     /**
@@ -144,22 +146,22 @@ public class Banner {
      * @param positionY   Position of banner ad on the y axis.
      */
     public void create(final String publisherId, final AdSize adSize, final int positionX, final
-    int positionY) {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                createAdView(publisherId, adSize);
-                createPopupWindow();
-                mPositionCode = PluginUtils.POSITION_CUSTOM;
-                mHorizontalOffset = positionX;
-                mVerticalOffset = positionY;
-                mHidden = false;
-            }
-        });
+    	int positionY) {
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			createAdView(publisherId, adSize);
+    			createPopupWindow();
+    			mPositionCode = PluginUtils.POSITION_CUSTOM;
+    			mHorizontalOffset = positionX;
+    			mVerticalOffset = positionY;
+    			mHidden = false;
+    		}
+    	});
     }
 
     private void createAdView(final String publisherId, final AdSize adSize) {
-        mAdView = new AdView(mUnityPlayerActivity);
+    	mAdView = new AdView(mUnityPlayerActivity);
         // Setting the background color works around an issue where the first ad isn't visible.
         mAdView.setBackgroundColor(Color.TRANSPARENT);
         mAdView.setAdUnitId(publisherId);
@@ -230,57 +232,56 @@ public class Banner {
     private void createPopupWindow() {
         // Workaround for issue where popUpWindow will not resize to the full width
         // of the screen to accommodate a smart banner.
-        int popUpWindowWidth = mAdView.getAdSize().equals(AdSize.SMART_BANNER)
-                ? ViewGroup.LayoutParams.MATCH_PARENT
-                : mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
-        int popUpWindowHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
-        mPopupWindow = new PopupWindow(mAdView, popUpWindowWidth, popUpWindowHeight);
+    	//int popUpWindowWidth = mAdView.getAdSize().equals(AdSize.SMART_BANNER)
+    	//? ViewGroup.LayoutParams.MATCH_PARENT
+    	//: mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+    	int popUpWindowWidth = ViewGroup.LayoutParams.MATCH_PARENT;
+    	int popUpWindowHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
+    	mPopupWindow = new PopupWindow(mAdView, popUpWindowWidth, popUpWindowHeight);
 
         // Copy system UI visibility flags set on Unity player window to newly created PopUpWindow.
-        int visibilityFlags = mUnityPlayerActivity.getWindow().getAttributes().flags;
-        mPopupWindow.getContentView().setSystemUiVisibility(visibilityFlags);
+    	int visibilityFlags = mUnityPlayerActivity.getWindow().getAttributes().flags;
+    	mPopupWindow.getContentView().setSystemUiVisibility(visibilityFlags);
 
         // Workaround to prevent ad views from losing visibility on activity changes for certain
         // devices (eg. Huawei devices).
-        PluginUtils.setPopUpWindowLayoutType(mPopupWindow,
-                WindowManager.LayoutParams.TYPE_APPLICATION_SUB_PANEL);
+    	PluginUtils.setPopUpWindowLayoutType(mPopupWindow,
+    		WindowManager.LayoutParams.TYPE_APPLICATION_SUB_PANEL);
     }
 
     private void showPopUpWindow() {
-        View anchorView = mUnityPlayerActivity.getWindow().getDecorView().getRootView();
+    	View anchorView = mUnityPlayerActivity.getWindow().getDecorView().getRootView();
 
-        if (this.mPositionCode == PluginUtils.POSITION_CUSTOM) {
+    	if (this.mPositionCode == PluginUtils.POSITION_CUSTOM) {
             // Android Nougat has a PopUpWindow bug gravity doesn't position views as expected.
             // Using offset values as a workaround. On certain devices (ie. Samsung S8) calls to
             // update() cause the PopUpWindow to be rendered at the top of the screen. Using
             // showAsDropDown() instead of showAtLocation() (when possible) avoids this issue.
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                mPopupWindow.showAsDropDown(anchorView,
-                        (int) PluginUtils.convertDpToPixel(mHorizontalOffset),
-                        -anchorView.getHeight()
-                                + (int) PluginUtils.convertDpToPixel(mVerticalOffset));
-            } else {
-                mPopupWindow.showAtLocation(
-                        anchorView, Gravity.NO_GRAVITY,
-                        (int) PluginUtils.convertDpToPixel(mHorizontalOffset),
-                        (int) PluginUtils.convertDpToPixel(mVerticalOffset));
-            }
-        } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-                int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
-                int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
+    		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+    			mPopupWindow.showAsDropDown(anchorView,
+    				(int) PluginUtils.convertDpToPixel(mHorizontalOffset),
+    				-anchorView.getHeight()
+    				+ (int) PluginUtils.convertDpToPixel(mVerticalOffset));
+    		} else {
+    			mPopupWindow.showAtLocation(
+    				anchorView, Gravity.NO_GRAVITY,
+    				(int) PluginUtils.convertDpToPixel(mHorizontalOffset),
+    				(int) PluginUtils.convertDpToPixel(mVerticalOffset));
+    		}
+    	} else {
+    		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+    			int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+    			int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
 
-                int xoff = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth,
-                        anchorView.getWidth());
-                int yoff = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight,
-                        anchorView.getHeight());
+    			int xoff = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth, anchorView.getWidth());
+    			int yoff = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight, anchorView.getWidth(), anchorView.getHeight());
 
-                mPopupWindow.showAsDropDown(anchorView, xoff, yoff);
-            } else {
-                mPopupWindow.showAtLocation(anchorView,
-                        PluginUtils.getLayoutGravityForPositionCode(mPositionCode), 0, 0);
-            }
-        }
+    			mPopupWindow.showAsDropDown(anchorView, xoff, yoff);
+    		} else {
+    			mPopupWindow.showAtLocation(anchorView,
+    				PluginUtils.getLayoutGravityForPositionCode(mPositionCode), 0, 0);
+    		}
+    	}
     }
 
     /**
@@ -289,50 +290,50 @@ public class Banner {
      * @param request The {@link AdRequest} object with targeting parameters.
      */
     public void loadAd(final AdRequest request) {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(PluginUtils.LOGTAG, "Calling loadAd() on Android");
-                mAdView.loadAd(request);
-            }
-        });
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			Log.d(PluginUtils.LOGTAG, "Calling loadAd() on Android");
+    			mAdView.loadAd(request);
+    		}
+    	});
     }
 
     /**
      * Sets the {@link AdView} to be visible.
      */
     public void show() {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(PluginUtils.LOGTAG, "Calling show() on Android");
-                mHidden = false;
-                mAdView.setVisibility(View.VISIBLE);
-                mPopupWindow.setTouchable(true);
-                mPopupWindow.update();
-                if (!mPopupWindow.isShowing()) {
-                    showPopUpWindow();
-                }
-                mAdView.resume();
-            }
-        });
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			Log.d(PluginUtils.LOGTAG, "Calling show() on Android");
+    			mHidden = false;
+    			mAdView.setVisibility(View.VISIBLE);
+    			mPopupWindow.setTouchable(true);
+    			mPopupWindow.update();
+    			if (!mPopupWindow.isShowing()) {
+    				showPopUpWindow();
+    			}
+    			mAdView.resume();
+    		}
+    	});
     }
 
     /**
      * Sets the {@link AdView} to be gone.
      */
     public void hide() {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(PluginUtils.LOGTAG, "Calling hide() on Android");
-                mHidden = true;
-                mAdView.setVisibility(View.GONE);
-                mPopupWindow.setTouchable(false);
-                mPopupWindow.update();
-                mAdView.pause();
-            }
-        });
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			Log.d(PluginUtils.LOGTAG, "Calling hide() on Android");
+    			mHidden = true;
+    			mAdView.setVisibility(View.GONE);
+    			mPopupWindow.setTouchable(false);
+    			mPopupWindow.update();
+    			mAdView.pause();
+    		}
+    	});
     }
 
     /**
@@ -369,25 +370,25 @@ public class Banner {
      * @return the height of the {@link AdView}.
      */
     public float getHeightInPixels() {
-        FutureTask<Integer> task = new FutureTask<>(new Callable<Integer>() {
-            @Override
-            public Integer call() throws Exception {
-                return mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
-            }
-        });
-        mUnityPlayerActivity.runOnUiThread(task);
+    	FutureTask<Integer> task = new FutureTask<>(new Callable<Integer>() {
+    		@Override
+    		public Integer call() throws Exception {
+    			return mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
+    		}
+    	});
+    	mUnityPlayerActivity.runOnUiThread(task);
 
-        float result = -1;
-        try {
-            result = task.get();
-        } catch (InterruptedException e) {
-            Log.e(PluginUtils.LOGTAG,
-                    String.format("Failed to get ad view height: %s", e.getLocalizedMessage()));
-        } catch (ExecutionException e) {
-            Log.e(PluginUtils.LOGTAG,
-                    String.format("Failed to get ad view height: %s", e.getLocalizedMessage()));
-        }
-        return result;
+    	float result = -1;
+    	try {
+    		result = task.get();
+    	} catch (InterruptedException e) {
+    		Log.e(PluginUtils.LOGTAG,
+    			String.format("Failed to get ad view height: %s", e.getLocalizedMessage()));
+    	} catch (ExecutionException e) {
+    		Log.e(PluginUtils.LOGTAG,
+    			String.format("Failed to get ad view height: %s", e.getLocalizedMessage()));
+    	}
+    	return result;
     }
 
     /**
@@ -396,25 +397,25 @@ public class Banner {
      * @return the width of the {@link AdView}.
      */
     public float getWidthInPixels() {
-        FutureTask<Integer> task = new FutureTask<>(new Callable<Integer>() {
-            @Override
-            public Integer call() throws Exception {
-                return mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
-            }
-        });
-        mUnityPlayerActivity.runOnUiThread(task);
+    	FutureTask<Integer> task = new FutureTask<>(new Callable<Integer>() {
+    		@Override
+    		public Integer call() throws Exception {
+    			return mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+    		}
+    	});
+    	mUnityPlayerActivity.runOnUiThread(task);
 
-        float result = -1;
-        try {
-            result = task.get();
-        } catch (InterruptedException e) {
-            Log.e(PluginUtils.LOGTAG,
-                    String.format("Failed to get ad view width: %s", e.getLocalizedMessage()));
-        } catch (ExecutionException e) {
-            Log.e(PluginUtils.LOGTAG,
-                    String.format("Failed to get ad view width: %s", e.getLocalizedMessage()));
-        }
-        return result;
+    	float result = -1;
+    	try {
+    		result = task.get();
+    	} catch (InterruptedException e) {
+    		Log.e(PluginUtils.LOGTAG,
+    			String.format("Failed to get ad view width: %s", e.getLocalizedMessage()));
+    	} catch (ExecutionException e) {
+    		Log.e(PluginUtils.LOGTAG,
+    			String.format("Failed to get ad view width: %s", e.getLocalizedMessage()));
+    	}
+    	return result;
     }
 
     /**
@@ -423,13 +424,13 @@ public class Banner {
      * @param positionCode A code indicating where to place the ad.
      */
     public void setPosition(final int positionCode) {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                mPositionCode = positionCode;
-                updatePosition();
-            }
-        });
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			mPositionCode = positionCode;
+    			updatePosition();
+    		}
+    	});
     }
 
     /**
@@ -439,30 +440,30 @@ public class Banner {
      * @param positionY Position of banner ad on the y axis.
      */
     public void setPosition(final int positionX, final int positionY) {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                mPositionCode = PluginUtils.POSITION_CUSTOM;
-                mHorizontalOffset = positionX;
-                mVerticalOffset = positionY;
-                updatePosition();
-            }
-        });
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			mPositionCode = PluginUtils.POSITION_CUSTOM;
+    			mHorizontalOffset = positionX;
+    			mVerticalOffset = positionY;
+    			updatePosition();
+    		}
+    	});
     }
 
     /**
      * Update the {@link AdView} position based on current parameters.
      */
     private void updatePosition() {
-        if (mPopupWindow != null && mPopupWindow.isShowing()) {
-            View anchorView = mUnityPlayerActivity.getWindow().getDecorView().getRootView();
-            Point location = getPositionInPixels(anchorView);
-            mPopupWindow.update(anchorView,
-                    location.x,
-                    location.y,
-                    mPopupWindow.getWidth(),
-                    mPopupWindow.getHeight());
-        }
+    	if (mPopupWindow != null && mPopupWindow.isShowing()) {
+    		View anchorView = mUnityPlayerActivity.getWindow().getDecorView().getRootView();
+    		Point location = getPositionInPixels(anchorView);
+    		mPopupWindow.update(anchorView,
+    			location.x,
+    			location.y,
+    			mPopupWindow.getWidth(),
+    			mPopupWindow.getHeight());
+    	}
     }
 
     /**
@@ -475,149 +476,126 @@ public class Banner {
      */
     private Point getPositionInPixels(View anchorView) {
 
-        if (mPositionCode == PluginUtils.POSITION_CUSTOM) {
-            int x = (int) PluginUtils.convertDpToPixel(mHorizontalOffset);
-            int y = (int) PluginUtils.convertDpToPixel(mVerticalOffset) - anchorView.getHeight();
-            return new Point(x, y);
-        } else {
-            int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
-            int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
+    	if (mPositionCode == PluginUtils.POSITION_CUSTOM) {
+    		int x = (int) PluginUtils.convertDpToPixel(mHorizontalOffset);
+    		int y = (int) PluginUtils.convertDpToPixel(mVerticalOffset) - anchorView.getHeight();
+    		return new Point(x, y);
+    	} else {
+    		int adViewWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+    		int adViewHeight = mAdView.getAdSize().getHeightInPixels(mUnityPlayerActivity);
 
-            int x = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth,
-                    anchorView.getWidth());
-            int y = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight,
-                    anchorView.getHeight());
-            return new Point(x, y);
-        }
+    		int x = PluginUtils.getHorizontalOffsetForPositionCode(mPositionCode, adViewWidth, anchorView.getWidth());
+    		int y = PluginUtils.getVerticalOffsetForPositionCode(mPositionCode, adViewHeight, anchorView.getWidth(), anchorView.getHeight());
+    		return new Point(x, y);
+    	}
     }
 
     /**
      * Just the {@link AdView}.
      */
     public void just() {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(PluginUtils.LOGTAG, "Calling just() on Android");
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			Log.d(PluginUtils.LOGTAG, "Calling just() on Android");
 
-                float scale = 0;
+    			float scale = 1;
+    			float baseWidth   = 640.0f;
+    			float baseHeight  = 1136.0f;
+    			float screenWidth = mUnityPlayerActivity.getWindow().getDecorView().getWidth();
+    			float screenHeight = mUnityPlayerActivity.getWindow().getDecorView().getHeight();
+    			// float density = mUnityPlayerActivity.getResources().getDisplayMetrics().density;
+    			// screenWidth *= (float)(1.0 / density);
+    			// screenHeight *= (float)(1.0 / density);
+    			float bannerWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
+    			float screenRatio    = screenWidth / screenHeight;
+    			float baseRatio   = baseWidth / baseHeight;
+    			Boolean isPortrate  = screenRatio < baseRatio;
 
-                // 黒帯考慮
-                {
-                    float baseHeight  = 1136;
-                    float targetWidth = 640;
-                    float rectWidth   = 600;
-
-                    float bannerWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
-                    Log.d("OUCH", "bannerWidth:" + bannerWidth);
-
-                    float screenWidth = mUnityPlayerActivity.getWindow().getDecorView().getWidth();
-                    float screenHeight = mUnityPlayerActivity.getWindow().getDecorView().getHeight();
-
-                    Log.d("OUCH", "before pointX:" + screenWidth);
-                    Log.d("OUCH", "before pointY:" + screenHeight);
-
-                    // 解像度
-                    float density = mUnityPlayerActivity.getResources().getDisplayMetrics().density;
-                    Log.d("OUCH", "density:" + density);
-
-                    screenWidth *= (float)(1.0 / density);
-                    screenHeight *= (float)(1.0 / density);
-
-                    Log.d("OUCH", "after pointX:" + screenWidth);
-                    Log.d("OUCH", "after pointY:" + screenHeight);
-
-                    float heightScale = baseHeight / screenHeight;
-                    Log.d("OUCH", "heightScale:" + heightScale);
-                    float width       = screenWidth * heightScale; // height1136としたときのwidth
-                    Log.d("OUCH", "width:" + width);
-                    float padding     = width - targetWidth;
-                    Log.d("OUCH", "padding:" + padding);
-                    targetWidth       = screenHeight - padding; // 黒帯抜いたwidth
-                    Log.d("OUCH", "targetWidth:" + targetWidth);
-
+    			if (mPositionCode == PluginUtils.POSITION_RECT_BOTTOM || mPositionCode == PluginUtils.POSITION_RECT_CENTER)
+    			{
                     // レクタングル
-                    if (mPositionCode == PluginUtils.POSITION_RECT_BOTTOM || mPositionCode == PluginUtils.POSITION_RECT_CENTER)
-                    {
-                        targetWidth *= rectWidth / width;
-                    }
+    				if (isPortrate)
+    				{
+            			// 縦に長い端末への対応
+    					scale = screenWidth / baseWidth * 2.0f;
+    				}
+    				else
+    				{
+           	 			// 横に長い端末への対応
+    					float fixedScreenWidth = baseWidth * screenHeight / baseHeight;
+    					scale               = (screenWidth / baseWidth) * (fixedScreenWidth / screenWidth) * 2.0f;
+    				}
+    			}
+    			else
+    			{
+       	 			// バナー
+    				if (isPortrate)
+    				{
+           				// 縦に長い端末への対応
+    					scale = screenWidth / bannerWidth;
+    				}
+    				else
+    				{
+            			// 横に長い端末への対応
+    					float fixedScreenWidth = baseWidth * screenHeight / baseHeight;
+    					scale               = (screenWidth / bannerWidth) * (fixedScreenWidth / screenWidth);
+    				}
+    			}
+    			Log.d("OUCH", "scale:" + scale);
 
-                    Log.d("OUCH", "mAdView.getWidth:" + mAdView.getWidth());
-                    Log.d("OUCH", "targetWidth:" + targetWidth);
-                    // scale = targetWidth / mAdView.getWidth();
-                    scale = targetWidth / bannerWidth;
+    			int width = mPopupWindow.getWidth();
+    			int height = mPopupWindow.getHeight();
+    			Log.d("OUCH", "before width:" + width);
+    			Log.d("OUCH", "before eight:" + height);
 
-                }
+    			width = (int)((float)width * scale);
+    			height = (int)((float)height * scale);
 
-                // mAdView.setScaleX(scale);
-                // mAdView.setScaleY(scale);
-                // mAdView.setScaleX(1.5f);
-                // mAdView.setScaleY(1.5f);
-                // mPopupWindow.setScaleX(3);
-                // mPopupWindow.setScaleY(3);
-                // mPopupWindow.setWidth(640);
-                // mPopupWindow.setHeight(320);
-                // FrameLayout.LayoutParams param = new FrameLayout.LayoutParams(
-                //         ViewGroup.LayoutParams.WRAP_CONTENT,
-                //         ViewGroup.LayoutParams.WRAP_CONTENT);
-                // LayoutParams layoutParams = mAdView.getLayoutParams();
-                // layoutParams.height = 320 * 2;
-                // layoutParams.width = 50 * 2;
-                // mAdView.setLayoutParams(param);
-                Log.d("OUCH", "scale:" + scale);
-
-                int width = mPopupWindow.getWidth();
-                int height = mPopupWindow.getHeight();
-                Log.d("OUCH", "before width:" + width);
-                Log.d("OUCH", "before eight:" + height);
-
-                width = (int)((float)width * scale);
-                height = (int)((float)height * scale);
-
-                // mPopupWindow.setWidth(width);
-                // mPopupWindow.setHeight(height);
-                Log.d("OUCH", "after width:" + width);
-                Log.d("OUCH", "after eight:" + height);
-            }
-        });
+    			// mPopupWindow.setWidth(width);
+    			// mPopupWindow.setHeight(height);
+    			Log.d("OUCH", "after width:" + width);
+    			Log.d("OUCH", "after eight:" + height);
+    		}
+    	});
     }
 
     /**
      * refreshAd the {@link AdView}.
      */
     public void refreshAd() {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(PluginUtils.LOGTAG, "Calling refreshAd() on Android");
-                AdRequest adRequest = new AdRequest.Builder().build();
-                mAdView.loadAd(adRequest);
-            }
-        });
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			Log.d(PluginUtils.LOGTAG, "Calling refreshAd() on Android");
+    			AdRequest adRequest = new AdRequest.Builder().build();
+    			mAdView.loadAd(adRequest);
+    		}
+    	});
     }
 
     /**
      * move the {@link AdView}.
      */
     public void moveAdPosition(final int positionCode) {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(PluginUtils.LOGTAG, "MOGE Calling moveAdPosition() on Android" + positionCode);
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			Log.d(PluginUtils.LOGTAG, "MOGE Calling moveAdPosition() on Android" + positionCode);
 
                 // moveではなく表示非表示に変更
-                if (positionCode == PluginUtils.POSITION_RECT_BACK)
-                {
-                    mAdView.setVisibility(View.INVISIBLE);
-                    mPopupWindow.setTouchable(false);
-                    mPopupWindow.update();
-                }
-                else
-                {
-                    mAdView.setVisibility(View.VISIBLE);
-                    mPopupWindow.setTouchable(true);
-                    mPopupWindow.update();
-                }
+    			if (positionCode == PluginUtils.POSITION_RECT_BACK)
+    			{
+    				mAdView.setVisibility(View.INVISIBLE);
+    				mPopupWindow.setTouchable(false);
+    				mPopupWindow.update();
+    			}
+    			else
+    			{
+    				mAdView.setVisibility(View.VISIBLE);
+    				mPopupWindow.setTouchable(true);
+    				mPopupWindow.update();
+    			}
 
                 // mPositionCode = positionCode;
                 //
@@ -634,8 +612,8 @@ public class Banner {
                 // int height = mPopupWindow.getHeight();
                 //
                 // mPopupWindow.update(anchorView, xoff, yoff, width, height);
-            }
-        });
+    		}
+    	});
     }
 
     // protected void setScale(float scale) {
@@ -656,37 +634,37 @@ public class Banner {
      * SetRefreshInterval the {@link AdView}.
      */
     public void setRefreshInterval(final float interval) {
-        mUnityPlayerActivity.runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                Log.d(PluginUtils.LOGTAG, "Calling setRefreshInterval() on Android: " + interval);
+    	mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    		@Override
+    		public void run() {
+    			Log.d(PluginUtils.LOGTAG, "Calling setRefreshInterval() on Android: " + interval);
 
-                if (interval < 1) {
-                    return;
-                }
+    			if (interval < 1) {
+    				return;
+    			}
 
-                final int timerInterval = (int)(interval * 1000);
+    			final int timerInterval = (int)(interval * 1000);
 
-                mUnityPlayerActivity.runOnUiThread(new Runnable() {
-                    public void run() {
-                        final Timer timer = new Timer();
-                        final Handler handler = new Handler();
+    			mUnityPlayerActivity.runOnUiThread(new Runnable() {
+    				public void run() {
+    					final Timer timer = new Timer();
+    					final Handler handler = new Handler();
 
-                        timer.schedule( new TimerTask(){
-                            @Override
-                            public void run() {
-                                handler.post( new Runnable() {
-                                    public void run() {
-                                        Log.d(PluginUtils.LOGTAG, "Calling refresh timer() on Android: " + interval);
-                                        refreshAd();
-                                    }
-                                });
-                            }
-                        }, timerInterval, timerInterval);
-                    }
-                });
-            }
-        });
+    					timer.schedule( new TimerTask(){
+    						@Override
+    						public void run() {
+    							handler.post( new Runnable() {
+    								public void run() {
+    									Log.d(PluginUtils.LOGTAG, "Calling refresh timer() on Android: " + interval);
+    									refreshAd();
+    								}
+    							});
+    						}
+    					}, timerInterval, timerInterval);
+    				}
+    			});
+    		}
+    	});
     }
 
     /**
@@ -695,6 +673,6 @@ public class Banner {
      * For non-mediated responses, this value will be {@code null}.
      */
     public String getMediationAdapterClassName() {
-        return mAdView != null ? mAdView.getMediationAdapterClassName() : null;
+    	return mAdView != null ? mAdView.getMediationAdapterClassName() : null;
     }
 }

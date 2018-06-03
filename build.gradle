@@ -68,13 +68,13 @@ task downloadResolver() {
         }
     } else {
         println 'clone ' + jarResolverRepo
-        def result = exec {
-            executable "${git_exe}"
-            args "clone", jarResolverRepo, "${resolverDir}"
-        }
-        if (result.exitValue == 0) {
-            println "Downloaded resolver from " + jarResolverRepo
-        }
+//        def result = exec {
+//            executable "${git_exe}"
+//            args "clone", jarResolverRepo, "${resolverDir}"
+//        }
+//        if (result.exitValue == 0) {
+//            println "Downloaded resolver from " + jarResolverRepo
+//        }
     }
 }
 
