@@ -212,7 +212,7 @@ public class PluginUtils {
                 offset = ((-anchorHeight - viewHeight) / 2) + (296 * 2);
                 break;
             case POSITION_RECT_CENTER:
-                offset = ((-anchorHeight - viewHeight) / 2) + (37 * 2);
+                offset = ((-anchorHeight - viewHeight) / 2);
                 break;
             case POSITION_RECT_BACK:
                 offset = anchorHeight * 6;

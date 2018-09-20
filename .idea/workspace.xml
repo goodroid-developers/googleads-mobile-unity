@@ -1,0 +1,1083 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bb7e699-fc1a-478c-a0e0-c9073dce3139" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/ChangeLog.txt" afterPath="$PROJECT_DIR$/ChangeLog.txt" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="$PROJECT_DIR$/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/gradlew" afterPath="$PROJECT_DIR$/gradlew" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
+      <change beforePath="$PROJECT_DIR$/mediation/.gitignore" afterPath="$PROJECT_DIR$/mediation/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/AdColony/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/README.md" afterPath="$PROJECT_DIR$/mediation/AdColony/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/build.gradle" afterPath="$PROJECT_DIR$/mediation/AdColony/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/.gitignore" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/.gitignore" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/build.gradle" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/proguard-rules.pro" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/proguard-rules.pro" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/src/main/java/com/google/unity/mediation/adcolony/AdColonyUnityExtrasBuilder.java" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/adcolony/src/main/java/com/google/unity/mediation/adcolony/AdColonyUnityExtrasBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/build.gradle" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/gradlew" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/gradlew" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/gradlew.bat" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/gradlew.bat" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/android-library/settings.gradle" afterPath="$PROJECT_DIR$/mediation/AdColony/source/android-library/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AdColony/AdColonyMediationExtras.cs" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AdColony/AdColonyMediationExtras.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AdColony/AdColonyMediationExtras.cs.meta" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AdColony/AdColonyMediationExtras.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/GoogleMobileAds/Editor/AdColonyMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/GoogleMobileAds/Editor/AdColonyMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAdColonyMediation/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAdColonyMediation/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAdColonyMediation/project.properties" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAdColonyMediation/project.properties" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.h" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.h" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.h.meta" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.h.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.m" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.m" />
+      <change beforePath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.m.meta" afterPath="$PROJECT_DIR$/mediation/AdColony/source/plugin/Assets/Plugins/iOS/AdColonyExtrasBuilder.m.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/AppLovin/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/README.md" afterPath="$PROJECT_DIR$/mediation/AppLovin/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/build.gradle" afterPath="$PROJECT_DIR$/mediation/AppLovin/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AppLovin/AppLovin.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AppLovin/AppLovin.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AppLovin/AppLovin.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Api/Mediation/AppLovin/AppLovin.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/DummyClient.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/DummyClient.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/DummyClient.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/DummyClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/IAppLovinClient.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/IAppLovinClient.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/IAppLovinClient.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Common/Mediation/AppLovin/IAppLovinClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Editor/AppLovinMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Editor/AppLovinMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Editor/AppLovinPostProcessBuild.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Editor/AppLovinPostProcessBuild.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Editor/AppLovinPostProcessBuild.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Editor/AppLovinPostProcessBuild.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Mediation/AppLovin.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Mediation/AppLovin.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Mediation/AppLovin/AppLovinClient.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Mediation/AppLovin/AppLovinClient.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Mediation/AppLovin/AppLovinClient.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Mediation/AppLovin/AppLovinClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Mediation/AppLovinClientFactory.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Mediation/AppLovinClientFactory.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Mediation/AppLovinClientFactory.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/Mediation/AppLovinClientFactory.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/AppLovinClient.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/AppLovinClient.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/AppLovinClient.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/AppLovinClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/Externs.cs" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/Externs.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/Externs.cs.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Mediation/AppLovin/Externs.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/AndroidManifest.xml.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/AndroidManifest.xml.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/project.properties" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/project.properties" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/project.properties.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/Android/GoogleMobileAdsAppLovinMediation/project.properties.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/iOS/GADUMAppLovinInterface.m" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/iOS/GADUMAppLovinInterface.m" />
+      <change beforePath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/iOS/GADUMAppLovinInterface.m.meta" afterPath="$PROJECT_DIR$/mediation/AppLovin/source/plugin/Assets/Plugins/iOS/GADUMAppLovinInterface.m.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/Facebook/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/Facebook/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Facebook/README.md" afterPath="$PROJECT_DIR$/mediation/Facebook/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Facebook/build.gradle" afterPath="$PROJECT_DIR$/mediation/Facebook/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Facebook/source/plugin/Assets/GoogleMobileAds/Editor/UnityMediationDependencies.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/mediation/InMobi/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/InMobi/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/InMobi/README.md" afterPath="$PROJECT_DIR$/mediation/InMobi/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/InMobi/build.gradle" afterPath="$PROJECT_DIR$/mediation/InMobi/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/InMobi/source/plugin/Assets/GoogleMobileAds/Editor/InMobiMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/InMobi/source/plugin/Assets/GoogleMobileAds/Editor/InMobiMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/InMobi/source/plugin/Assets/Plugins/Android/GoogleMobileAdsInMobiMediation/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mediation/InMobi/source/plugin/Assets/Plugins/Android/GoogleMobileAdsInMobiMediation/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/InMobi/source/plugin/Assets/Plugins/Android/GoogleMobileAdsInMobiMediation/project.properties" afterPath="$PROJECT_DIR$/mediation/InMobi/source/plugin/Assets/Plugins/Android/GoogleMobileAdsInMobiMediation/project.properties" />
+      <change beforePath="$PROJECT_DIR$/mediation/Maio/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/Maio/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Maio/README.md" afterPath="$PROJECT_DIR$/mediation/Maio/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Maio/build.gradle" afterPath="$PROJECT_DIR$/mediation/Maio/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Maio/source/plugin/Assets/GoogleMobileAds/Editor/MaioMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/Maio/source/plugin/Assets/GoogleMobileAds/Editor/MaioMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Maio/source/plugin/Assets/Plugins/Android/GoogleMobileAdsMaioMediation/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mediation/Maio/source/plugin/Assets/Plugins/Android/GoogleMobileAdsMaioMediation/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Maio/source/plugin/Assets/Plugins/Android/GoogleMobileAdsMaioMediation/project.properties" afterPath="$PROJECT_DIR$/mediation/Maio/source/plugin/Assets/Plugins/Android/GoogleMobileAdsMaioMediation/project.properties" />
+      <change beforePath="$PROJECT_DIR$/mediation/MyTarget/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/MyTarget/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/MyTarget/README.md" afterPath="$PROJECT_DIR$/mediation/MyTarget/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/MyTarget/build.gradle" afterPath="$PROJECT_DIR$/mediation/MyTarget/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/MyTarget/source/plugin/Assets/GoogleMobileAds/Editor/MyTargetMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/MyTarget/source/plugin/Assets/GoogleMobileAds/Editor/MyTargetMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Nend/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/Nend/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Nend/README.md" afterPath="$PROJECT_DIR$/mediation/Nend/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Nend/build.gradle" afterPath="$PROJECT_DIR$/mediation/Nend/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Nend/source/plugin/Assets/GoogleMobileAds/Editor/NendMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/Nend/source/plugin/Assets/GoogleMobileAds/Editor/NendMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Tapjoy/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/Tapjoy/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Tapjoy/README.md" afterPath="$PROJECT_DIR$/mediation/Tapjoy/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Tapjoy/build.gradle" afterPath="$PROJECT_DIR$/mediation/Tapjoy/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Tapjoy/source/plugin/Assets/GoogleMobileAds/Editor/TapjoyMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/Tapjoy/source/plugin/Assets/GoogleMobileAds/Editor/TapjoyMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Tapjoy/source/plugin/Assets/Plugins/Android/GoogleMobileAdsTapjoyMediation/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mediation/Tapjoy/source/plugin/Assets/Plugins/Android/GoogleMobileAdsTapjoyMediation/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Tapjoy/source/plugin/Assets/Plugins/Android/GoogleMobileAdsTapjoyMediation/project.properties" afterPath="$PROJECT_DIR$/mediation/Tapjoy/source/plugin/Assets/Plugins/Android/GoogleMobileAdsTapjoyMediation/project.properties" />
+      <change beforePath="$PROJECT_DIR$/mediation/UnityAds/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/UnityAds/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/UnityAds/README.md" afterPath="$PROJECT_DIR$/mediation/UnityAds/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/UnityAds/build.gradle" afterPath="$PROJECT_DIR$/mediation/UnityAds/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/UnityAds/source/plugin/Assets/GoogleMobileAds/Editor/UnityMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/UnityAds/source/plugin/Assets/GoogleMobileAds/Editor/UnityMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/CHANGELOG.md" afterPath="$PROJECT_DIR$/mediation/Vungle/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/README.md" afterPath="$PROJECT_DIR$/mediation/Vungle/README.md" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/build.gradle" afterPath="$PROJECT_DIR$/mediation/Vungle/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/.gitignore" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/build.gradle" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradle/wrapper/gradle-wrapper.jar" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradlew" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradlew" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradlew.bat" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/gradlew.bat" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/settings.gradle" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/.gitignore" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/build.gradle" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/proguard-rules.pro" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/proguard-rules.pro" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/java/com/google/unity/mediation/vungle/VungleUnityExtrasBuilder.java" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/java/com/google/unity/mediation/vungle/VungleUnityExtrasBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/java/com/google/unity/mediation/vungle/VungleUnityInterstitialExtrasBuilder.java" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/java/com/google/unity/mediation/vungle/VungleUnityInterstitialExtrasBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/java/com/google/unity/mediation/vungle/VungleUnityRewardedVideoExtrasBuilder.java" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/java/com/google/unity/mediation/vungle/VungleUnityRewardedVideoExtrasBuilder.java" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/mediation/Vungle/source/android-library/vungle/src/main/res/values/styles.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleInterstitialMediationExtras.cs" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleInterstitialMediationExtras.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleInterstitialMediationExtras.cs.meta" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleInterstitialMediationExtras.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleMediationExtras.cs" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleMediationExtras.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleMediationExtras.cs.meta" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleMediationExtras.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleRewardedVideoMediationExtras.cs" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleRewardedVideoMediationExtras.cs" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleRewardedVideoMediationExtras.cs.meta" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Api/Mediation/Vungle/VungleRewardedVideoMediationExtras.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Editor/VungleMediationDependencies.xml" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/GoogleMobileAds/Editor/VungleMediationDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.h" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.h" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.h.meta" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.h.meta" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.m" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.m" />
+      <change beforePath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.m.meta" afterPath="$PROJECT_DIR$/mediation/Vungle/source/plugin/Assets/Plugins/iOS/VungleExtrasBuilder.m.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/HelloWorld/.gitignore" afterPath="$PROJECT_DIR$/samples/HelloWorld/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scenes/MainScene.unity" afterPath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scenes/MainScene.unity" />
+      <change beforePath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scenes/MainScene.unity.meta" afterPath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scenes/MainScene.unity.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scripts/GoogleMobileAdsDemoScript.cs" afterPath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scripts/GoogleMobileAdsDemoScript.cs" />
+      <change beforePath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scripts/GoogleMobileAdsDemoScript.cs.meta" afterPath="$PROJECT_DIR$/samples/HelloWorld/Assets/Scripts/GoogleMobileAdsDemoScript.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/LICENSE.txt" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/LICENSE.txt" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/LICENSE.txt.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/LICENSE.txt.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/Roboto-Regular.ttf" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/Roboto-Regular.ttf" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/Roboto-Regular.ttf.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Fonts/roboto/Roboto-Regular.ttf.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BallMaterial.mat" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BallMaterial.mat" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BallMaterial.mat.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BallMaterial.mat.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BillboardMaterial.mat" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BillboardMaterial.mat" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BillboardMaterial.mat.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/BillboardMaterial.mat.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/ErrorTextMaterial.mat" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/ErrorTextMaterial.mat" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/ErrorTextMaterial.mat.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/ErrorTextMaterial.mat.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/FloorMaterial.mat" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/FloorMaterial.mat" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/FloorMaterial.mat.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/FloorMaterial.mat.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/PickUpMaterial.mat" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/PickUpMaterial.mat" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/PickUpMaterial.mat.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/PickUpMaterial.mat.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/TextMaterial.mat" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/TextMaterial.mat" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/TextMaterial.mat.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/TextMaterial.mat.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/WallMaterial.mat" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/WallMaterial.mat" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/WallMaterial.mat.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Materials/WallMaterial.mat.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/PreFabs/PickUp.prefab" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/PreFabs/PickUp.prefab" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/PreFabs/PickUp.prefab.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/PreFabs/PickUp.prefab.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scenes/MainScene.unity" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scenes/MainScene.unity" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scenes/MainScene.unity.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scenes/MainScene.unity.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/AdsController.cs" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/AdsController.cs" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/AdsController.cs.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/AdsController.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/BallController.cs" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/BallController.cs" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/BallController.cs.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/BallController.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/CameraController.cs" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/CameraController.cs" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/CameraController.cs.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/CameraController.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/Rotator.cs" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/Rotator.cs" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/Rotator.cs.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Scripts/Rotator.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Shaders/3DText.shader" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Shaders/3DText.shader" />
+      <change beforePath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Shaders/3DText.shader.meta" afterPath="$PROJECT_DIR$/samples/Roll-A-Ball-NativeDemo/Assets/Shaders/3DText.shader.meta" />
+      <change beforePath="$PROJECT_DIR$/source/.gitignore" afterPath="$PROJECT_DIR$/source/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/.gitignore" afterPath="$PROJECT_DIR$/source/android-library/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/.gitignore" afterPath="$PROJECT_DIR$/source/android-library/app/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/build.gradle" afterPath="$PROJECT_DIR$/source/android-library/app/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/proguard-rules.pro" afterPath="$PROJECT_DIR$/source/android-library/app/proguard-rules.pro" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/AdNetworkExtras.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/AdNetworkExtras.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Banner.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Banner.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/CustomNativeAd.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/CustomNativeAd.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Interstitial.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Interstitial.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/NativeAdLoader.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/NativeAdLoader.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/NativeExpressAd.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/PluginUtils.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/PluginUtils.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/RewardBasedVideo.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/RewardBasedVideo.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/UnityAdListener.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/UnityAdListener.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/UnityAdLoaderListener.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/UnityAdLoaderListener.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/UnityRewardBasedVideoAdListener.java" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/UnityRewardBasedVideoAdListener.java" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-hdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-mdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-xhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/res/values/strings.xml" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/source/android-library/app/src/main/res/values/styles.xml" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/build.gradle" afterPath="$PROJECT_DIR$/source/android-library/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/gradle/wrapper/gradle-wrapper.jar" afterPath="$PROJECT_DIR$/source/android-library/gradle/wrapper/gradle-wrapper.jar" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/source/android-library/gradle/wrapper/gradle-wrapper.properties" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/gradlew" afterPath="$PROJECT_DIR$/source/android-library/gradlew" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/gradlew.bat" afterPath="$PROJECT_DIR$/source/android-library/gradlew.bat" />
+      <change beforePath="$PROJECT_DIR$/source/android-library/settings.gradle" afterPath="$PROJECT_DIR$/source/android-library/settings.gradle" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdFailedToLoadEventArgs.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdFailedToLoadEventArgs.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdFailedToLoadEventArgs.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdFailedToLoadEventArgs.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdLoader.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdLoader.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdLoader.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdLoader.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdPosition.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdPosition.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdPosition.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdPosition.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdRequest.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdRequest.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdRequest.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdRequest.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdSize.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdSize.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdSize.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/AdSize.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/BannerView.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/BannerView.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/BannerView.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/BannerView.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeEventArgs.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeEventArgs.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeEventArgs.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeEventArgs.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeTemplateAd.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeTemplateAd.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeTemplateAd.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/CustomNativeTemplateAd.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Gender.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Gender.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Gender.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Gender.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/InterstitialAd.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/InterstitialAd.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/InterstitialAd.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/InterstitialAd.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Mediation.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Mediation.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Mediation/MediationExtras.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Mediation/MediationExtras.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Mediation/MediationExtras.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Mediation/MediationExtras.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/MobileAds.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/MobileAds.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/MobileAds.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/MobileAds.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/NativeExpressAdView.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/NativeExpressAdView.cs.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Reward.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Reward.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Reward.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/Reward.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/RewardBasedVideoAd.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/RewardBasedVideoAd.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/RewardBasedVideoAd.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Api/RewardBasedVideoAd.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/DummyClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/DummyClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/DummyClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/DummyClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IAdLoaderClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IAdLoaderClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IAdLoaderClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IAdLoaderClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IBannerClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IBannerClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IBannerClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IBannerClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/ICustomNativeTemplateClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/ICustomNativeTemplateClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/ICustomNativeTemplateClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/ICustomNativeTemplateClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IInterstitialClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IInterstitialClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IInterstitialClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IInterstitialClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IMobileAdsClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IMobileAdsClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IMobileAdsClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IMobileAdsClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/INativeExpressAdClient.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/INativeExpressAdClient.cs.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IRewardBasedVideoAdClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IRewardBasedVideoAdClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IRewardBasedVideoAdClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/IRewardBasedVideoAdClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/MobileAdsEventExecutor.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/MobileAdsEventExecutor.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/MobileAdsEventExecutor.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/MobileAdsEventExecutor.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/Utils.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/Utils.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/Utils.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Common/Utils.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Editor.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Editor.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/AdLoaderClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/AdLoaderClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/AdLoaderClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/AdLoaderClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/BannerClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/BannerClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/BannerClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/BannerClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/CustomNativeTemplateClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/CustomNativeTemplateClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/CustomNativeTemplateClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/CustomNativeTemplateClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/InterstitialClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/InterstitialClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/InterstitialClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/InterstitialClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/MobileAdsClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/MobileAdsClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/MobileAdsClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/MobileAdsClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/NativeExpressAdClient.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/NativeExpressAdClient.cs.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/RewardBasedVideoAdClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/RewardBasedVideoAdClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/RewardBasedVideoAdClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/RewardBasedVideoAdClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Utils.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Utils.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Utils.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/Android/Utils.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/GoogleMobileAdsClientFactory.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/GoogleMobileAdsClientFactory.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/GoogleMobileAdsClientFactory.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/GoogleMobileAdsClientFactory.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/BannerClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/BannerClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/BannerClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/BannerClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/CustomNativeTemplateClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/CustomNativeTemplateClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/CustomNativeTemplateClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/CustomNativeTemplateClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Externs.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Externs.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Externs.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Externs.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/InterstitialClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/InterstitialClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/InterstitialClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/InterstitialClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MobileAdsClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MobileAdsClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MobileAdsClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MobileAdsClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MonoPInvokeCallbackAttribute.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MonoPInvokeCallbackAttribute.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MonoPInvokeCallbackAttribute.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/MonoPInvokeCallbackAttribute.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/NativeExpressAdClient.cs" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/NativeExpressAdClient.cs.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/RewardBasedVideoAdClient.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/RewardBasedVideoAdClient.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/RewardBasedVideoAdClient.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/RewardBasedVideoAdClient.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Utils.cs" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Utils.cs" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Utils.cs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/GoogleMobileAds/Platforms/iOS/Utils.cs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/PlayServicesResolver.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/PlayServicesResolver.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/PlayServicesResolver/Editor.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/PlayServicesResolver/Editor.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/AndroidManifest.xml.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/libs.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/libs.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/project.properties" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/project.properties" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/project.properties.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/Android/GoogleMobileAdsPlugin/project.properties.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdLoader.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdNetworkExtras.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdNetworkExtras.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdNetworkExtras.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUAdNetworkExtras.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUBanner.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterface.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterface.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterface.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterface.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUInterstitial.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeCustomTemplateAd.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeExpressAd.h" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeExpressAd.h.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeExpressAd.m" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUNativeExpressAd.m.meta" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUObjectCache.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUPluginUtil.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURequest.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.h.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.m" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.m" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.m.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADURewardBasedVideoAd.m.meta" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUTypes.h" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUTypes.h" />
+      <change beforePath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUTypes.h.meta" afterPath="$PROJECT_DIR$/source/plugin/Assets/Plugins/iOS/GADUTypes.h.meta" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="googleads-mobile-unity" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="googleads-mobile-unity" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="googleads-mobile-unity" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Banner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Banner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1920">
+              <caret line="164" column="54" lean-forward="false" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+              <folding>
+                <element signature="e#0#25767#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/android-library/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PluginUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/PluginUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+              <folding>
+                <element signature="e#0#9025#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>position</find>
+      <find>mPositionCode</find>
+      <find>POSITION_RECT_CENTER</find>
+      <find>Gravity</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="myGradleHomes">
+      <map>
+        <entry key="$PROJECT_DIR$" value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1" />
+      </map>
+    </option>
+    <option name="myGradleVersions">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4.8.1" />
+      </map>
+    </option>
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="googleads-mobile-unity" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="googleads-mobile-unity" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="availableTasks">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <list>
+              <ExternalTaskPojo>
+                <option name="description" value="Download the Play Services Resolver" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="downloadResolver" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the components produced by root project 'googleads-mobile-unity'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="components" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="copyAndroidLibraryJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the sub-projects of root project 'googleads-mobile-unity'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="projects" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the dependent components of components in root project 'googleads-mobile-unity'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependentComponents" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all buildscript dependencies declared in root project 'googleads-mobile-unity'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildEnvironment" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Generates Gradle wrapper files." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="wrapper" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Creates and exports the Plugin unity package" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="exportPackage" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clearJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="clearTempBuildFolder" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the configuration model of root project 'googleads-mobile-unity'. [incubating]" />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="model" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the tasks runnable from root project 'googleads-mobile-unity'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="tasks" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Initializes a new Gradle build." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="init" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="createTempBuildFolder" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the insight into a specific dependency in root project 'googleads-mobile-unity'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencyInsight" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays all dependencies declared in root project 'googleads-mobile-unity'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="dependencies" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="buildAndroidPluginJar" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays a help message." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="help" />
+              </ExternalTaskPojo>
+              <ExternalTaskPojo>
+                <option name="description" value="Displays the properties of root project 'googleads-mobile-unity'." />
+                <option name="linkedExternalProjectPath" value="$PROJECT_DIR$" />
+                <option name="name" value="properties" />
+              </ExternalTaskPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="projectBuildClasspath">
+      <map>
+        <entry key="$PROJECT_DIR$">
+          <value>
+            <ExternalProjectBuildClasspathPojo>
+              <option name="modulesBuildClasspath">
+                <map>
+                  <entry key="$PROJECT_DIR$">
+                    <value>
+                      <ExternalModuleBuildClasspathPojo>
+                        <option name="path" value="$PROJECT_DIR$" />
+                      </ExternalModuleBuildClasspathPojo>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="name" value="googleads-mobile-unity" />
+              <option name="projectBuildClasspath">
+                <list>
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-build-cache-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-wrapper-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-messaging-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-model-groovy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-process-services-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-tooling-api-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-kotlin-dsl-tooling-builders-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-docs-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/ant-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-jvm-services-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/ant-launcher-1.9.11.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-logging-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-runtime-api-info-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/groovy-all-2.4.12.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-launcher-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-base-services-groovy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-installation-beacon-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-kotlin-dsl-provider-spi-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-kotlin-dsl-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-base-services-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-kotlin-dsl-tooling-models-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-resources-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-core-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-kotlin-dsl-provider-plugins-0.17.5.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-cli-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-build-option-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-model-core-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-persistent-cache-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/gradle-core-api-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-language-scala-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-plugins-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-test-kit-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-signing-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-osgi-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-code-quality-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-maven-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-tooling-api-builders-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-platform-play-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-language-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-build-comparison-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-publish-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-resources-s3-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-ear-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-ide-play-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-composite-builds-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-ide-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-javascript-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-platform-jvm-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-announce-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-plugin-use-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-language-jvm-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-jacoco-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-testing-junit-platform-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-workers-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-resources-http-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-build-cache-http-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-testing-base-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-version-control-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-build-init-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-testing-jvm-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-platform-base-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-language-java-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-testing-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-resources-sftp-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-ide-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-platform-native-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-ivy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-dependency-management-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-antlr-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-language-groovy-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-plugin-development-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-diagnostics-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-resources-gcs-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/ivy-2.2.0.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-scala-4.8.1.jar" />
+                  <option value="$USER_HOME$/.gradle/wrapper/dists/gradle-4.8.1-bin/e8p42vx1m7a3mz9ydmjagn6wn/gradle-4.8.1/lib/plugins/gradle-reporting-4.8.1.jar" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/java" />
+                  <option value="$PROJECT_DIR$/buildSrc/src/main/groovy" />
+                </list>
+              </option>
+            </ExternalProjectBuildClasspathPojo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/PluginUtils.java" />
+        <option value="$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Banner.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="-2560" />
+    <option name="y" value="-390" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="AndroidView" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+              <item name="unity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="googleads-mobile-unity" type="1abcf292:AndroidViewProjectNode" />
+              <item name="googleads-mobile-unity" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="android-library" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="google" type="462c0819:PsiDirectoryNode" />
+              <item name="unity" type="462c0819:PsiDirectoryNode" />
+              <item name="ads" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="JUnit" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bb7e699-fc1a-478c-a0e0-c9073dce3139" name="Default" comment="" />
+      <created>1536590383529</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1536590383529</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-2560" y="-390" width="2560" height="1440" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991952" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20333599" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Banner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="164" column="54" lean-forward="false" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#25767#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/PluginUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#9025#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Banner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#25767#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/PluginUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="163" column="22" lean-forward="false" selection-start-line="163" selection-start-column="22" selection-end-line="163" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#9025#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/gradlew">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/PluginUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#9025#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/src/main/java/com/google/unity/ads/Banner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="164" column="54" lean-forward="false" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#25767#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/android-library/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

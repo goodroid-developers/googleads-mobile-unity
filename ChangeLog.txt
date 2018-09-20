@@ -1,6 +1,116 @@
 Google Mobile Ads Unity Plugin Change Log
 
 **************
+Version 3.15.1
+**************
+
+Plugin:
+- Fixed crash when adding mediation extras to ad request.
+
+Built and tested with:
+- Google Play services 15.0.1
+- Google Mobile Ads iOS SDK 7.32.0
+- Unity Jar Resolver 1.2.88.0
+
+**************
+Version 3.15.0
+**************
+
+Plugin:
+- Forward Android ad events on background thread through JNI interface
+to mitigate ANRs.
+
+Mediation packages:
+- Updated AppLovin Unity package to v3.0.3.
+- Updated Chartboost Unity package to v1.1.1.
+- Updated Facebook Unity package to v1.1.3.
+- Updated IronSource Unity package to v1.0.2.
+- Updated Nend Unity package to v2.0.0.
+- Updated Tapjoy Unity package to v2.0.0.
+
+Built and tested with:
+- Google Play services 15.0.1
+- Google Mobile Ads iOS SDK 7.31.0
+- Unity Jar Resolver 1.2.79.0
+
+**************
+Version 3.14.0
+**************
+
+Plugin:
+- Fixed Google Play dependencies version conflict with Firebase plugins.
+
+Mediation packages:
+- Updated AdColony Unity package to v1.2.1.
+- Updated AppLovin Unity package to v3.0.2.
+- Updated Chartboost Unity package to v1.1.0.
+- Updated Facebook Unity package to v1.1.2.
+- Updated InMobi Unity package to v2.1.0.
+- Updated IronSource Unity package to v1.0.1.
+- Updated Maio Unity package to v1.1.0.
+- Updated MoPub Unity package to v2.1.0.
+- Updated MyTarget Unity package to v2.1.0.
+- Updated Nend Unity package to v1.0.2.
+- Updated Tapjoy Unity package to v1.1.1.
+- Updated UnityAds Unity package to v1.1.3.
+
+Built and tested with:
+- Google Play services 15.0.1
+- Google Mobile Ads iOS SDK 7.31.0
+- Unity Jar Resolver 1.2.75.0
+
+**************
+Version 3.13.1
+**************
+
+Plugin:
+- Fixed issue where banner ads reposition to top of screen after a full
+screen ad is displayed.
+
+Built and tested with:
+- Google Play services 12.0.1
+- Google Mobile Ads iOS SDK 7.30.0
+- Unity Jar Resolver 1.2.64.0
+
+**************
+Version 3.13.0
+**************
+
+Plugin:
+- Added `OnAdCompleted` ad event to rewarded video ads.
+- Removed support for Native Ads Express.
+
+Mediation packages:
+- Added Chartboost mediation support package.
+- Added MoPub mediation support package.
+- Updated AppLovin Unity package to v1.2.1.
+- Updated AdColony Unity package to v1.0.1.
+- Updated myTarget Unity package to v2.0.0.
+
+Built and tested with:
+- Google Play services 12.0.1
+- Google Mobile Ads iOS SDK 7.30.0
+- Unity Jar Resolver 1.2.64.0
+
+**************
+Version 3.12.0
+**************
+
+Plugin:
+- Added `setUserId` API to rewarded video ads to identify users in
+server-to-server reward callbacks.
+- Removed functionality that forced ad events to be invoked on the
+main thread.
+
+Mediation packages:
+- Updated maio Unity package to v1.0.1.
+
+Built and tested with:
+- Google Play services 11.8.0
+- Google Mobile Ads iOS SDK 7.29.0
+- Unity Jar Resolver 1.2.61.0
+
+**************
 Version 3.11.1
 **************
 

@@ -24,6 +24,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.WindowManager;
+import android.view.Gravity;
 import android.widget.PopupWindow;
 import android.widget.FrameLayout;
 import com.google.android.gms.ads.AdListener;

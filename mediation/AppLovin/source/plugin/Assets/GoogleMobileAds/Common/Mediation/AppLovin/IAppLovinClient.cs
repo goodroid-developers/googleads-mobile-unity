@@ -21,5 +21,14 @@ namespace GoogleMobileAds.Common.Mediation.AppLovin
     {
         // Initialize the AppLovin SDK.
         void Initialize();
+
+        // Sets a flag indicating whether a user located in the
+        // European Union (i.e., EU/GDPR data subject) has provided
+        // opt-in consent for the collection and use of personal data.
+        void SetHasUserConsent(bool hasUserConsent);
+
+        // Sets a flag indicating whether a user is known to be
+        // in an age-restricted category (i.e., under the age of 16).
+        void SetIsAgeRestrictedUser(bool isAgeRestrictedUser);
     }
 }
