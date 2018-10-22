@@ -33,3 +33,16 @@ please use [github's issue tracker](//github.com/googleads/googleads-mobile-unit
 License
 -------
 [Apache 2.0 License](http://www.apache.org/licenses/LICENSE-2.0.html)
+
+GOODROID
+-------
+
+### jarファイルを更新したい
+1. $cd googleads-mobile-unity/source/android-library/app
+2. java編集
+3. $gradle makeJar
+4. $mv ./build/libs/unity-plugin-library.jar ~/beast/Assets/Plugins/Android/GoogleMobileAdsPlugin/libs/.
+
+### 署名ハッシュ値を更新したい
+1. xor_test.javaのhashに署名ハッシュ入れて単体で実行(XORのkeyはbannerにしています)
+2. エンコードされた値をsource/android-library/app/src/main/java/com/google/unity/ads/Banner.javaのbannerIdListに登録(署名ハッシュ値許可リストになります)
