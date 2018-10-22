@@ -24,6 +24,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.view.WindowManager;
+import android.view.Gravity;
 import android.widget.PopupWindow;
 import android.widget.FrameLayout;
 import com.google.android.gms.ads.AdListener;
@@ -240,8 +241,7 @@ public class Banner {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
                 mPopupWindow.showAsDropDown(anchorView,
                         (int) PluginUtils.convertDpToPixel(mHorizontalOffset),
-                        -anchorView.getHeight()
-                                + (int) PluginUtils.convertDpToPixel(mVerticalOffset));
+                        (int) PluginUtils.convertDpToPixel(mVerticalOffset));
             } else {
                 mPopupWindow.showAtLocation(
                         anchorView, Gravity.NO_GRAVITY,
