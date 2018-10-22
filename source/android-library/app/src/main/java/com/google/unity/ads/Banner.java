@@ -485,32 +485,20 @@ public class Banner {
                     float rectWidth   = 600;
 
                     float bannerWidth = mAdView.getAdSize().getWidthInPixels(mUnityPlayerActivity);
-                    Log.d("OUCH", "bannerWidth:" + bannerWidth);
 
                     float screenWidth = mUnityPlayerActivity.getWindow().getDecorView().getWidth();
                     float screenHeight = mUnityPlayerActivity.getWindow().getDecorView().getHeight();
 
-                    Log.d("OUCH", "before pointX:" + screenWidth);
-                    Log.d("OUCH", "before pointY:" + screenHeight);
-
                     // 解像度
                     float density = mUnityPlayerActivity.getResources().getDisplayMetrics().density;
-                    Log.d("OUCH", "density:" + density);
 
                     screenWidth *= (float)(1.0 / density);
                     screenHeight *= (float)(1.0 / density);
 
-                    Log.d("OUCH", "after pointX:" + screenWidth);
-                    Log.d("OUCH", "after pointY:" + screenHeight);
-
                     float heightScale = baseHeight / screenHeight;
-                    Log.d("OUCH", "heightScale:" + heightScale);
                     float width       = screenWidth * heightScale; // height1136としたときのwidth
-                    Log.d("OUCH", "width:" + width);
                     float padding     = width - targetWidth;
-                    Log.d("OUCH", "padding:" + padding);
                     targetWidth       = screenHeight - padding; // 黒帯抜いたwidth
-                    Log.d("OUCH", "targetWidth:" + targetWidth);
 
                     // レクタングル
                     if (mPositionCode == PluginUtils.POSITION_RECT_BOTTOM || mPositionCode == PluginUtils.POSITION_RECT_CENTER)
@@ -518,42 +506,15 @@ public class Banner {
                         targetWidth *= rectWidth / width;
                     }
 
-                    Log.d("OUCH", "mAdView.getWidth:" + mAdView.getWidth());
-                    Log.d("OUCH", "targetWidth:" + targetWidth);
-                    // scale = targetWidth / mAdView.getWidth();
                     scale = targetWidth / bannerWidth;
 
                 }
 
-                // mAdView.setScaleX(scale);
-                // mAdView.setScaleY(scale);
-                // mAdView.setScaleX(1.5f);
-                // mAdView.setScaleY(1.5f);
-                // mPopupWindow.setScaleX(3);
-                // mPopupWindow.setScaleY(3);
-                // mPopupWindow.setWidth(640);
-                // mPopupWindow.setHeight(320);
-                // FrameLayout.LayoutParams param = new FrameLayout.LayoutParams(
-                //         ViewGroup.LayoutParams.WRAP_CONTENT,
-                //         ViewGroup.LayoutParams.WRAP_CONTENT);
-                // LayoutParams layoutParams = mAdView.getLayoutParams();
-                // layoutParams.height = 320 * 2;
-                // layoutParams.width = 50 * 2;
-                // mAdView.setLayoutParams(param);
-                Log.d("OUCH", "scale:" + scale);
-
                 int width = mPopupWindow.getWidth();
                 int height = mPopupWindow.getHeight();
-                Log.d("OUCH", "before width:" + width);
-                Log.d("OUCH", "before eight:" + height);
 
                 width = (int)((float)width * scale);
                 height = (int)((float)height * scale);
-
-                // mPopupWindow.setWidth(width);
-                // mPopupWindow.setHeight(height);
-                Log.d("OUCH", "after width:" + width);
-                Log.d("OUCH", "after eight:" + height);
             }
         });
     }
