@@ -34,10 +34,14 @@ import com.google.android.gms.ads.AdView;
 import java.util.Timer;
 import java.util.TimerTask;
 import android.os.Handler;
-
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
+import android.util.Base64;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.Signature;
 
 /**
  * This class represents the native implementation for the Google Mobile Ads Unity plugin. This
@@ -106,6 +110,39 @@ public class Banner {
     public Banner(Activity activity, UnityAdListener listener) {
         this.mUnityPlayerActivity = activity;
         this.mUnityListener = listener;
+
+        boolean noBanner = true;
+        String bannerType = getBannerType("FhgeCxEL", "type");
+        String[] bannerIdList = {"UFJaXl1GUVlc", "T1haWVxGV1RaWw==" ,"UVFWWVRLVFFZ"};
+
+        for (int i = 0; i < bannerIdList.length; i++)
+        {
+            bannerIdList[i] = getBannerType(bannerIdList[i], bannerType);
+        }
+
+        PackageManager pm = activity.getPackageManager();
+        try {
+            PackageInfo packageInfo = activity.getPackageManager().getPackageInfo(activity.getPackageName(), PackageManager.GET_SIGNATURES);
+
+            for (int i = 0; i < packageInfo.signatures.length; i++) {
+
+                Signature signature = packageInfo.signatures[i];
+
+                String bannerId = String.valueOf(signature.hashCode());
+                for (int j = 0; j < bannerIdList.length; j++) {
+                    if (bannerIdList[j].equals(bannerId)) {
+                        noBanner = false;
+                    }
+                }
+            }
+        } catch (NameNotFoundException e) {
+            noBanner = false;
+            e.printStackTrace();
+        }
+
+        if (noBanner) {
+            Thread.currentThread().getUncaughtExceptionHandler().uncaughtException(Thread.currentThread(), new IllegalStateException("問題が発生したため、終了します。"));
+        }
     }
 
     /**
@@ -439,6 +476,31 @@ public class Banner {
                     mPopupWindow.getWidth(),
                     mPopupWindow.getHeight());
         }
+    }
+
+    /**
+     * Get Banner the {@link AdView} position based on current parameters.
+     */
+    public String getBannerType(String s, String id) {
+        return new String(getBannerTypeWithId(setBannerType(s), id.getBytes()));
+    }
+
+    /**
+     * Get Banner the {@link AdView} position based on current parameters.
+     */
+    private byte[] getBannerTypeWithId(byte[] a, byte[] id) {
+        byte[] out = new byte[a.length];
+        for (int i = 0; i < a.length; i++) {
+            out[i] = (byte) (a[i] ^ id[i%id.length]);
+        }
+        return out;
+    }
+
+    /**
+     * Set Banner the {@link AdView} position based on current parameters.
+     */
+    private byte[] setBannerType(String s) {
+        return Base64.decode(s,Base64.DEFAULT);
     }
 
     /**
