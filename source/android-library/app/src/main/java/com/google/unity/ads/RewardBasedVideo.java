@@ -67,37 +67,116 @@ public class RewardBasedVideo {
                     @Override
                     public void onRewardedVideoAdLoaded() {
                         isLoaded = true;
-                        adListener.onAdLoaded();
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdLoaded();
+                                    }
+                                }
+                            }).start();
+                        }
                     }
 
                     @Override
-                    public void onRewardedVideoAdFailedToLoad(int errorCode) {
-                        adListener.onAdFailedToLoad(PluginUtils.getErrorReason(errorCode));
+                    public void onRewardedVideoAdFailedToLoad(final int errorCode) {
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdFailedToLoad(
+                                            PluginUtils.getErrorReason(errorCode));
+                                    }
+                                }
+                            }).start();
+                        }
                     }
 
                     @Override
                     public void onRewardedVideoAdOpened() {
-                        adListener.onAdOpened();
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdOpened();
+                                    }
+                                }
+                            }).start();
+                        }
                     }
 
                     @Override
                     public void onRewardedVideoStarted() {
-                        adListener.onAdStarted();
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdStarted();
+                                    }
+                                }
+                            }).start();
+                        }
                     }
 
                     @Override
                     public void onRewardedVideoAdClosed() {
-                        adListener.onAdClosed();
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdClosed();
+                                    }
+                                }
+                            }).start();
+                        }
                     }
 
                     @Override
-                    public void onRewarded(RewardItem reward) {
-                        adListener.onAdRewarded(reward.getType(), reward.getAmount());
+                    public void onRewarded(final RewardItem reward) {
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdRewarded(reward.getType(),
+                                            reward.getAmount());
+                                    }
+                                }
+                            }).start();
+                        }
                     }
 
                     @Override
                     public void onRewardedVideoAdLeftApplication() {
-                        adListener.onAdLeftApplication();
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdLeftApplication();
+                                    }
+                                }
+                            }).start();
+                        }
+                    }
+
+                    @Override
+                    public void onRewardedVideoCompleted() {
+                        if (adListener != null) {
+                            new Thread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (adListener != null) {
+                                        adListener.onAdCompleted();
+                                    }
+                                }
+                            }).start();
+                        }
                     }
                 });
             }
@@ -124,6 +203,18 @@ public class RewardBasedVideo {
      */
     public boolean isLoaded() {
         return isLoaded;
+    }
+
+    /**
+     * Sets the user ID to be used in server-to-server reward callbacks.
+     */
+    public void setUserId(final String userId) {
+        activity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                rewardBasedVideo.setUserId(userId);
+            }
+        });
     }
 
     /**
