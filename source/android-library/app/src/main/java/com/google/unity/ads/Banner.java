@@ -429,6 +429,10 @@ public class Banner {
         mUnityPlayerActivity.getWindow().getDecorView().getRootView()
                 .removeOnLayoutChangeListener(mLayoutChangeListener);
 
+        if (mAdView == null || mViewTreeLayoutChangeListener == null) {
+            return;
+        }
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
             mAdView.getViewTreeObserver()
                     .removeOnGlobalLayoutListener(mViewTreeLayoutChangeListener);
